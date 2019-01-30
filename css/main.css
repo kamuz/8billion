@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700');
+
+:root{
+    --main-font: "Roboto Condensed", sans-serif;
+}
+
+body{
+    font-family: var(--main-font);
+    background: url(../img/bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+img.logo{
+    margin: 20px auto;
+    width: 100%;
+}
+
+.container{
+    width: 400px;
+    margin: 0 auto;
+}
+
+.contact-form{
+    margin-bottom: 100px;
+}
+
+.contact-form label{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="submit"],
+.contact-form textarea{
+    width: 90%;
+    display: block;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea{
+    border-bottom-left-radius: 10px;
+    border-top: 2px solid #000;
+    width: 95%;
+    outline: none;
+    font-family: var(--main-font);
+    font-size: 15px;
+}
+
+.contact-form input[type="submit"]{
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-family: var(--main-font);
+    padding: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.contact-form .relative{
+    position: relative;
+}
+
+.contact-form button[type="reset"]{
+    background: url(../img/reset.png) no-repeat;
+    width: 24px;
+    height: 24px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    outline: none;
+}
+
+.contact-form input[type="text"]::placeholder,
+.contact-form input[type="email"]::placeholder,
+.contact-form textarea::placeholder{
+    font-family: var(--main-font);
+    font-size: 15px;
+    color: #9f9f9f;
+}
+
+@media (max-width: 450px){
+
+    .container{
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea{
+        width: 95%;
+    }
+
+}
